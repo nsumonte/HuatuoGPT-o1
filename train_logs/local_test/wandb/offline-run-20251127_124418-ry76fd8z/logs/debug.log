@@ -1,0 +1,23 @@
+2025-11-27 12:44:18,322 INFO    MainThread:41943 [wandb_setup.py:_flush():80] Current SDK version is 0.23.0
+2025-11-27 12:44:18,322 INFO    MainThread:41943 [wandb_setup.py:_flush():80] Configure stats pid to 41943
+2025-11-27 12:44:18,322 INFO    MainThread:41943 [wandb_setup.py:_flush():80] Loading settings from /Users/nicolassumonte/.config/wandb/settings
+2025-11-27 12:44:18,322 INFO    MainThread:41943 [wandb_setup.py:_flush():80] Loading settings from /Users/nicolassumonte/Documents/GitHub/HuatuoGPT-o1/wandb/settings
+2025-11-27 12:44:18,322 INFO    MainThread:41943 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-11-27 12:44:18,322 INFO    MainThread:41943 [wandb_init.py:setup_run_log_directory():713] Logging user logs to ./train_logs/local_test/wandb/offline-run-20251127_124418-ry76fd8z/logs/debug.log
+2025-11-27 12:44:18,322 INFO    MainThread:41943 [wandb_init.py:setup_run_log_directory():714] Logging internal logs to ./train_logs/local_test/wandb/offline-run-20251127_124418-ry76fd8z/logs/debug-internal.log
+2025-11-27 12:44:18,322 INFO    MainThread:41943 [wandb_init.py:init():840] calling init triggers
+2025-11-27 12:44:18,322 INFO    MainThread:41943 [wandb_init.py:init():845] wandb.init called with sweep_config: {}
+config: {'experiment_name': 'local_test', 'run_name': None, 'model_path': 'meta-llama/Llama-3.2-1B-Instruct', 'data_path': './data/test_sample.json', 'max_samples': 10, 'output_dir': './ckpts/local_test', 'max_ckpts': 2, 'log_dir': './train_logs/local_test', 'max_seq_len': 1024, 'gradient_checkpointing': False, 'gradient_accumulation_steps': 2, 'train_bsz_per_gpu': 1, 'weight_decay': 0.1, 'learning_rate': 1e-05, 'warmup_rates': 0.1, 'n_epochs': 1, 'log_every': 1, 'wandb_online': False, 'hf_token': None, 'push_to_hub': False, 'hf_repo_id': None, 'seed': 42, '_wandb': {}}
+2025-11-27 12:44:18,322 INFO    MainThread:41943 [wandb_init.py:init():888] starting backend
+2025-11-27 12:44:18,985 INFO    MainThread:41943 [wandb_init.py:init():891] sending inform_init request
+2025-11-27 12:44:19,011 INFO    MainThread:41943 [wandb_init.py:init():899] backend started and connected
+2025-11-27 12:44:19,014 INFO    MainThread:41943 [wandb_init.py:init():969] updated telemetry
+2025-11-27 12:44:19,034 INFO    MainThread:41943 [wandb_init.py:init():993] communicating run to backend with 90.0 second timeout
+2025-11-27 12:44:19,344 INFO    MainThread:41943 [wandb_init.py:init():1040] starting run threads in backend
+2025-11-27 12:44:19,470 INFO    MainThread:41943 [wandb_run.py:_console_start():2504] atexit reg
+2025-11-27 12:44:19,470 INFO    MainThread:41943 [wandb_run.py:_redirect():2352] redirect: wrap_raw
+2025-11-27 12:44:19,470 INFO    MainThread:41943 [wandb_run.py:_redirect():2421] Wrapping output streams.
+2025-11-27 12:44:19,470 INFO    MainThread:41943 [wandb_run.py:_redirect():2444] Redirects installed.
+2025-11-27 12:44:19,471 INFO    MainThread:41943 [wandb_init.py:init():1080] run started, returning control to user process
+2025-11-27 12:44:19,882 INFO    wandb-AsyncioManager-main:41943 [service_client.py:_forward_responses():80] Reached EOF.
+2025-11-27 12:44:19,883 INFO    wandb-AsyncioManager-main:41943 [mailbox.py:close():137] Closing mailbox, abandoning 0 handles.

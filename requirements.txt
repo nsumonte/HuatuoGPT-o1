@@ -1,9 +1,27 @@
+# Core Training
 trl==0.13.0
 accelerate==0.34.2
 torch==2.5.1
 transformers==4.46.2
 deepspeed==0.15.4
+
+# Opcional: Para modelos grandes
 xformers==0.0.28
+
+# Inference y Evaluación
 vllm==0.6.4
 torchvision==0.20.1
+
+# Utilities
 retrying
+jinja2
+tqdm
+
+# Tracking y Logging
+wandb>=0.16.0
+
+# HuggingFace Hub
+huggingface_hub>=0.20.0
+
+# Opcional: Para desarrollo local
+# flash-attn  # Descomentar si tienes GPU compatible

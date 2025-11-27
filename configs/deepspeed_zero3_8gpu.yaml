@@ -1,0 +1,28 @@
+# Configuración DeepSpeed Zero3 para entrenamiento multi-GPU (8 GPUs)
+# Optimizada para máximo paralelismo y eficiencia de memoria
+
+compute_environment: LOCAL_MACHINE
+debug: false
+deepspeed_config:
+  deepspeed_multinode_launcher: standard
+  offload_optimizer_device: cpu     # Offload optimizer a CPU para ahorrar VRAM
+  offload_param_device: cpu         # Offload params a CPU si es necesario
+  zero3_init_flag: true
+  zero3_save_16bit_model: true
+  zero_stage: 3                     # Zero3 para máximo ahorro de memoria
+  gradient_accumulation_steps: auto
+  gradient_clipping: auto
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+machine_rank: 0
+main_training_function: main
+mixed_precision: bf16
+num_machines: 1
+num_processes: 8                    # 8 GPUs
+rdzv_backend: static
+same_network: true
+tpu_env: []
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false
+
