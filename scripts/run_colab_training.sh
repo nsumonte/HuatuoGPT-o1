@@ -47,7 +47,7 @@ MAX_CKPTS=2                # Solo 2 checkpoints para ahorrar espacio
 WANDB_ONLINE=false
 
 # HF Token (pasar como argumento)
-HF_TOKEN="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"
+HF_TOKEN=""
 
 # =============================================================================
 # PARSEAR ARGUMENTOS
