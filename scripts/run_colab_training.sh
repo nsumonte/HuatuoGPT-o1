@@ -237,7 +237,7 @@ CMD="accelerate launch \
     --num_processes 1 \
     --num_machines 1 \
     --machine_rank 0 \
-    SFT_stage1_v2.py \
+    SFT_stage1.py \
     --experiment_name $EXPERIMENT_NAME \
     --run_name $RUN_NAME \
     --model_path $MODEL_PATH \
